@@ -3,9 +3,16 @@
 {% block title %}Contact - Shikhi AI{% endblock %}
 
 {% block content %}
-    <h1>Welcome to Shikhi AI</h1>
-    <h1>This is contact</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quod optio consequatur libero, eveniet culpa
-        enim aliquam odit neque exercitationem, fuga, similique debitis perspiciatis vero facere et sit sunt dolores!
-    </p>
+    <div class="container">
+        <h2 class="text-center mt-5"> Contact Me </h2>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="hasib@gmail.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Descriptions</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-success">Submit</button>
+    </div>
 {% endblock %}

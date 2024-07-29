@@ -1,0 +1,9 @@
+/* static/css/styles.css */
+footer {
+    text-align: center; /* Center the content horizontally */
+    padding: 1rem 2rem; /* Add some padding for spacing */
+    background-color: #eee; /* Set a light background color */
+    color: #333; /* Define the text color */
+    font-size: 0.8rem; /* Adjust font size for a slightly smaller look (optional) */
+  }
+  

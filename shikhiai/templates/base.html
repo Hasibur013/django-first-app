@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 
@@ -7,6 +9,8 @@
     <title>{% block title %}Shikhi AI{% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
 </head>
 
 <body>
@@ -41,12 +45,20 @@
             </div>
         </div>
     </nav>
-    
+
     {% block content %}{% endblock %}
+
+    <!-- footer pt add -->
+    <div class="mt-5">
+        <footer>
+            © Copyright 2011-2024 www.shikiai.com. All rights reserved. Developed by Shikhi AI.
+        </footer>
+    </div>
 
     <!-- script add -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
 </body>
 
 </html>
