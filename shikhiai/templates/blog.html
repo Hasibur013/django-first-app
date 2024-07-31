@@ -1,11 +1,15 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} <!-- must add in first line -->
+{% load static %} <!-- used for loading static file like img, js, css and it's not mandatory -->
 
 {% block title %}Blog - Shikhi AI{% endblock %}
 
 {% block content %}
-    <h1>Welcome to Shikhi AI</h1>
-    <h1>This is blog</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quod optio consequatur libero, eveniet culpa
-        enim aliquam odit neque exercitationem, fuga, similique debitis perspiciatis vero facere et sit sunt dolores!
-    </p>
+    <div class="container">
+        <marquee behavior="" direction="">Welcome to Shikhi AI</marquee>
+
+        <h1>This is blog</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quod optio consequatur libero, eveniet culpa
+            enim aliquam odit neque exercitationem, fuga, similique debitis perspiciatis vero facere et sit sunt dolores!
+        </p>
+    </div>
 {% endblock %}

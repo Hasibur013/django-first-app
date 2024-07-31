@@ -1,11 +1,94 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} <!-- must add in first line -->
+{% load static %} <!-- used for loading static file like img, js, css and it's not mandatory -->
 
 {% block title %}About - Shikhi AI{% endblock %}
 
 {% block content %}
-    <h1>Welcome to Shikhi AI</h1>
-    <h1>This is about</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quod optio consequatur libero, eveniet culpa
-        enim aliquam odit neque exercitationem, fuga, similique debitis perspiciatis vero facere et sit sunt dolores!
+<div class="container">
+    <!-- info about -->
+    <h1 class="text-center mt-5">About Shikhi AI</h1>
+    <p class="text-center mt-5">
+        <b>Welcome to Shikhi AI: Your Gateway to AI & ML Mastery</b><br><br>
+        <b>About Shikhi AI</b><br>
+        Welcome to Shikhi AI, the premier destination for mastering Artificial Intelligence (AI) and Machine Learning (ML). Whether you're a beginner starting your AI journey or an experienced professional looking to deepen your knowledge, Shikhi AI offers comprehensive resources to guide you every step of the way. <br><br>
+
+        <b>Why Shikhi AI?</b><br>
+        <b>**Expert-Led Courses**</b><br>
+        Our courses are designed and delivered by industry experts and seasoned educators. With a focus on practical, hands-on learning, our curriculum ensures that you gain the skills needed to excel in real-world AI and ML applications. <br>
+
+        <b>**Cutting-Edge Content**</b><br>
+        Stay ahead of the curve with our up-to-date content. At Shikhi AI, we continuously update our courses to include the latest trends, technologies, and tools in AI and ML, ensuring you are always learning the most relevant and impactful skills. <br>
+
+        <b>**Interactive Learning Experience**</b><br>
+        Learning at Shikhi AI is dynamic and interactive. Our platform offers a blend of video tutorials, live webinars, coding exercises, and interactive quizzes to reinforce your learning and keep you engaged. <br>
+
+        <b>**Community Support**</b>
+        Join a vibrant community of learners and professionals. Share knowledge, collaborate on projects, and get support from peers and mentors. Our community forums and networking events are great places to connect and grow your professional network. <br><br>
+
+        <b>Courses We Offer</b><br>
+        <b>**AI Fundamentals**</b><br>
+        Get started with the basics of AI, including an introduction to neural networks, natural language processing, and computer vision. Perfect for beginners, this course lays the groundwork for your AI learning journey. <br>
+
+        <b>**Machine Learning Algorithms**</b><br>
+        Dive deep into the world of machine learning with our comprehensive course on algorithms. Learn about supervised and unsupervised learning, reinforcement learning, and more. <br>
+
+        <b>**Deep Learning**</b><br>
+        Explore the complexities of deep learning, with a focus on neural networks, convolutional neural networks (CNNs), and recurrent neural networks (RNNs). Understand how these technologies power today's most advanced AI applications. <br>
+
+        <b>**Data Science and AI Integration**</b><br>
+        Master the intersection of data science and AI. Learn how to preprocess data, build predictive models, and apply AI techniques to extract insights from data. <br>
+
+        <b>**AI Ethics and Governance**</b><br>
+        Understand the ethical implications and governance issues surrounding AI. Learn about responsible AI practices, bias mitigation, and the societal impact of AI technologies. <br><br>
+
+        <b>Our Mission</b><br>
+        At Shikhi AI, our mission is to democratize AI education. We believe that AI and ML skills should be accessible to everyone, regardless of their background or location. Our goal is to empower individuals with the knowledge and skills they need to succeed in the AI-driven world. <br><br>
+
+        <b>Join Us Today</b><br>
+        Embark on your AI and ML learning journey with Shikhi AI. Explore our courses, connect with our community, and start building the future today. <br><br>
+
+
+        <i>For more information, course catalogs, and enrollment details, visit [Shikhi AI](#). Let's build the future of AI together!</i>
     </p>
+    <!-- team details -->
+    <h1 class="text-center my-5">Team Members</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/hasib.jpeg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Md. Hasibur Rahman</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/hasib2.png' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Md. Hasibur Rahman</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/hasib2.png' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Md. Hasibur Rahman</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 {% endblock %}
